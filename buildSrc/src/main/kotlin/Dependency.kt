@@ -17,9 +17,9 @@ object Dependency {
         const val DATA_STORE = "${default}.datastore:datastore:${dataStoreVersion}"
         const val DATA_STORE_CORE = "${default}.datastore:datastore-core:${dataStoreVersion}"
         const val KTX = "${default}.core:core-ktx:${ktxVersion}"
+        const val ROOM_COMPILER = "${default}.room:room-compiler:${roomVersion}"
         const val ROOM_KTX = "${default}.room:room-ktx:${roomVersion}"
         const val ROOM_RUNTIME = "${default}.room:room-runtime:${roomVersion}"
-        const val ROOM_COMPILER = "${default}.room:room-compiler:${roomVersion}"
         const val ROOM_TEST = "${default}.room:room-testing:${roomVersion}"
         const val SPLASH_SCREEN = "${default}.core:core-splashscreen:${splashScreenVersion}"
     }
