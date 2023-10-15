@@ -16,6 +16,8 @@ object Dependency {
         const val CONSTRAINT_LAYOUT = "${default}.constraintlayout:constraintlayout:${constraintLayoutVersion}"
         const val DATA_STORE = "${default}.datastore:datastore:${dataStoreVersion}"
         const val DATA_STORE_CORE = "${default}.datastore:datastore-core:${dataStoreVersion}"
+        const val DATA_STORE_PREFERENCES = "${default}.datastore:datastore-preferences:${dataStoreVersion}"
+        const val DATA_STORE_PREFERENCES_CORE = "${default}.datastore:datastore-preferences-core:${dataStoreVersion}"
         const val KTX = "${default}.core:core-ktx:${ktxVersion}"
         const val ROOM_COMPILER = "${default}.room:room-compiler:${roomVersion}"
         const val ROOM_KTX = "${default}.room:room-ktx:${roomVersion}"
