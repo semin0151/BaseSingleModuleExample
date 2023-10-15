@@ -3,6 +3,7 @@ plugins {
     id(Plugin.kotlin)
     id(Plugin.kapt)
     id(Plugin.protobuf) version (Plugin.Version.protobuf)
+    id(Plugin.hilt)
 }
 
 android {
@@ -62,6 +63,8 @@ dependencies {
     // datastore
     implementation(Dependency.AndroidX.DATA_STORE)
     implementation(Dependency.AndroidX.DATA_STORE_CORE)
+    implementation(Dependency.AndroidX.DATA_STORE_PREFERENCES)
+    implementation(Dependency.AndroidX.DATA_STORE_PREFERENCES_CORE)
     implementation(Dependency.Google.PROTOBUF)
 
     // room
