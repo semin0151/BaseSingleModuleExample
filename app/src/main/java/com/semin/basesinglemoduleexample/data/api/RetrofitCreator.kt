@@ -28,7 +28,6 @@ class RetrofitCreator: RetrofitProvider {
         .connectTimeout(30, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)
         .writeTimeout(30, TimeUnit.SECONDS)
-
         .build()
 
     override fun build(baseUrl: String): Retrofit {

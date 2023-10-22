@@ -44,44 +44,45 @@ android {
 
 dependencies {
 
-    implementation(Dependency.AndroidX.KTX)
-    implementation(Dependency.AndroidX.APP_COMPAT)
-    implementation(Dependency.AndroidX.CONSTRAINT_LAYOUT)
-    implementation(Dependency.AndroidX.SPLASH_SCREEN)
-    implementation(Dependency.Google.MATERIAL)
+    // androidX
+    implementation(Dependencies.AndroidX.KTX)
+    implementation(Dependencies.AndroidX.APP_COMPAT)
+    implementation(Dependencies.AndroidX.CONSTRAINT_LAYOUT)
+    implementation(Dependencies.AndroidX.SPLASH_SCREEN)
+    implementation(Dependencies.Google.MATERIAL)
 
     // hilt
-    implementation(Dependency.Google.HILT)
-    kapt(Dependency.Google.HILT_COMPILER)
+    implementation(Dependencies.Google.HILT)
+    kapt(Dependencies.Google.HILT_COMPILER)
 
     // annotation
-    implementation(Dependency.AndroidX.ANNOTATION)
+    implementation(Dependencies.AndroidX.ANNOTATION)
 
     // coroutine
-    implementation(Dependency.Kotlin.COROUTINE)
+    implementation(Dependencies.Kotlin.COROUTINE)
 
     // datastore
-    implementation(Dependency.AndroidX.DATA_STORE)
-    implementation(Dependency.AndroidX.DATA_STORE_CORE)
-    implementation(Dependency.AndroidX.DATA_STORE_PREFERENCES)
-    implementation(Dependency.AndroidX.DATA_STORE_PREFERENCES_CORE)
-    implementation(Dependency.Google.PROTOBUF)
+    implementation(Dependencies.AndroidX.DATA_STORE)
+    implementation(Dependencies.AndroidX.DATA_STORE_CORE)
+    implementation(Dependencies.AndroidX.DATA_STORE_PREFERENCES)
+    implementation(Dependencies.AndroidX.DATA_STORE_PREFERENCES_CORE)
+    implementation(Dependencies.Google.PROTOBUF)
 
     // room
-    implementation(Dependency.AndroidX.ROOM_RUNTIME)
-    implementation(Dependency.AndroidX.ROOM_KTX)
-    kapt(Dependency.AndroidX.ROOM_COMPILER)
-    annotationProcessor(Dependency.AndroidX.ROOM_COMPILER)
-    testImplementation(Dependency.AndroidX.ROOM_TEST)
+    implementation(Dependencies.AndroidX.ROOM_RUNTIME)
+    implementation(Dependencies.AndroidX.ROOM_KTX)
+    kapt(Dependencies.AndroidX.ROOM_COMPILER)
+    annotationProcessor(Dependencies.AndroidX.ROOM_COMPILER)
+    testImplementation(Dependencies.AndroidX.ROOM_TEST)
 
     // retrofit
-    implementation(Dependency.SquareUp.OKHTTP3)
-    implementation(Dependency.SquareUp.OKHTTP3_INTERCEPTOR)
-    implementation(Dependency.SquareUp.RETROFIT)
-    implementation(Dependency.SquareUp.RETROFIT_CONVERTER_GSON)
+    implementation(Dependencies.SquareUp.OKHTTP3)
+    implementation(Dependencies.SquareUp.OKHTTP3_INTERCEPTOR)
+    implementation(Dependencies.SquareUp.RETROFIT)
+    implementation(Dependencies.SquareUp.RETROFIT_CONVERTER_GSON)
 
-    testImplementation(Dependency.Test.JUNIT)
+    testImplementation(Dependencies.Test.JUNIT)
 
-    androidTestImplementation(Dependency.AndroidTest.JUNIT)
-    androidTestImplementation(Dependency.AndroidTest.ESPRESSO)
+    androidTestImplementation(Dependencies.AndroidTest.JUNIT)
+    androidTestImplementation(Dependencies.AndroidTest.ESPRESSO)
 }

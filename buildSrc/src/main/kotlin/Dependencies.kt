@@ -1,4 +1,4 @@
-object Dependency {
+object Dependencies {
 
     object AndroidX {
         private const val default = "androidx"
