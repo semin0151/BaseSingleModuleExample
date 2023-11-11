@@ -3,14 +3,17 @@ object Dependencies {
     object AndroidX {
         private const val default = "androidx"
 
+        private const val activityVersion = "1.8.0"
         private const val annotationVersion = "1.6.0"
         private const val appCompatVersion = "1.6.1"
         private const val constraintLayoutVersion = "2.1.4"
         private const val dataStoreVersion = "1.0.0"
+        private const val fragmentVersion = "1.6.1"
         private const val ktxVersion = "1.9.0"
         private const val roomVersion = "2.5.2"
         private const val splashScreenVersion = "1.0.1"
 
+        const val ACTIVITY = "${default}.activity:activity-ktx:${activityVersion}"
         const val ANNOTATION = "${default}.annotation:annotation:${annotationVersion}"
         const val APP_COMPAT = "${default}.appcompat:appcompat:${appCompatVersion}"
         const val CONSTRAINT_LAYOUT = "${default}.constraintlayout:constraintlayout:${constraintLayoutVersion}"
@@ -18,6 +21,7 @@ object Dependencies {
         const val DATA_STORE_CORE = "${default}.datastore:datastore-core:${dataStoreVersion}"
         const val DATA_STORE_PREFERENCES = "${default}.datastore:datastore-preferences:${dataStoreVersion}"
         const val DATA_STORE_PREFERENCES_CORE = "${default}.datastore:datastore-preferences-core:${dataStoreVersion}"
+        const val FRAGMENT = "${default}.fragment:fragment-ktx:${fragmentVersion}"
         const val KTX = "${default}.core:core-ktx:${ktxVersion}"
         const val ROOM_COMPILER = "${default}.room:room-compiler:${roomVersion}"
         const val ROOM_KTX = "${default}.room:room-ktx:${roomVersion}"

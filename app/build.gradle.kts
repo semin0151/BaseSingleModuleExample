@@ -45,9 +45,11 @@ android {
 dependencies {
 
     // androidX
-    implementation(Dependencies.AndroidX.KTX)
+    implementation(Dependencies.AndroidX.ACTIVITY)
     implementation(Dependencies.AndroidX.APP_COMPAT)
     implementation(Dependencies.AndroidX.CONSTRAINT_LAYOUT)
+    implementation(Dependencies.AndroidX.FRAGMENT)
+    implementation(Dependencies.AndroidX.KTX)
     implementation(Dependencies.AndroidX.SPLASH_SCREEN)
     implementation(Dependencies.Google.MATERIAL)
 
