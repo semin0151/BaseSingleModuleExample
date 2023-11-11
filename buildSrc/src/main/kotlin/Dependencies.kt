@@ -33,7 +33,7 @@ object Dependencies {
     object Google {
         private const val default = "com.google"
 
-        private const val hiltVersion = "2.44.2"
+        private const val hiltVersion = "2.48.1"
         private const val materialVersion = "1.9.0"
         private const val protobufVersion = "3.23.0"
 
