@@ -8,10 +8,10 @@ import com.semin.basesinglemoduleexample.presentation.base.viewmodel.BaseViewMod
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-abstract class MVIActivity<Binding : ViewDataBinding, State, Event>(@LayoutRes private val layoutId: Int) :
+abstract class MVIActivity<Binding : ViewDataBinding, Event, State>(@LayoutRes private val layoutId: Int) :
     BindActivity<Binding>(layoutId) {
 
-    abstract val viewModel: BaseViewModel<State, Event>
+    abstract val viewModel: BaseViewModel<Event, State>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -9,10 +9,10 @@ import com.semin.basesinglemoduleexample.presentation.base.viewmodel.BaseViewMod
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-abstract class MVIFragment<Binding : ViewDataBinding, State, Event>(@LayoutRes private val layoutId: Int) :
+abstract class MVIFragment<Binding : ViewDataBinding, Event, State>(@LayoutRes private val layoutId: Int) :
     BindFragment<Binding>(layoutId) {
 
-    abstract val viewModel: BaseViewModel<State, Event>
+    abstract val viewModel: BaseViewModel<Event, State>
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
